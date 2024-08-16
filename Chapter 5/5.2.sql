@@ -1,3 +1,6 @@
+-- 5.1 
+SELECT 2 + 2;
+
 -- 5.2 Division and Modulo
 
 SELECT 11 / 6;
