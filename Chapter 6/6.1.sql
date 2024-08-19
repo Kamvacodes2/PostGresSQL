@@ -19,7 +19,8 @@ CREATE TABLE employees (
 	CONSTRAINT emp_key PRIMARY KEY (emp_id),
 	CONSTRAINT emp_dept_unique UNIQUE (emp_id, dept_id)	
 )
-
+SELECT * FROM employees;
+	
 INSERT INTO departments(dept, city)
 VALUES 
 ('Tax', 'Atlanta'),
