@@ -23,7 +23,7 @@ VALUES ('T229901', 'Lynn', 'Malero');
 
 
 INSERT INTO natural_key_example (license_id, first_name, last_name)
-VALUES  ('T229901', 'Sam', 'Tracy');
+VALUES  ('T229903', 'Sam', 'Tracy');
 
 --  because a primary key by definition must be unique for each row, the server rejected the 
 -- operation. 
