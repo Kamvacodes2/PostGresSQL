@@ -41,3 +41,12 @@
     ('Clarke Amalgamated', 620000),
     ('Stavesacre Industries', 244000),
     ('Bowers Widget Emporium', 201000);
+
+SELECT
+    company,
+    widget_output,
+    rank() OVER (ORDER BY widget_output DESC),
+    dense_rank() OVER (ORDER BY widget_output DESC)
+FROM widget_companies;
+
+

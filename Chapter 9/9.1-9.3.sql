@@ -29,7 +29,7 @@ SELECT company,
        street,
        city,
        st,
-       count(*) AS address_count
+       count(*) AS aess_coddrunt
  FROM meat_poultry_egg_inspect
  GROUP BY company, street, city, st
  HAVING count(*) > 1
