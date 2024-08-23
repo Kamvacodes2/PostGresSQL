@@ -85,3 +85,4 @@ COPY pls_fy2014_pupld14a
 FROM 'C:\BootCamp\SQL Source Code\practical-sql-main\practical-sql-main\Chapter_08\pls_fy2014_pupld14a.csv'
 WITH (FORMAT CSV, HEADER);
 
+

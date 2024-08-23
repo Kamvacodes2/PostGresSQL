@@ -13,10 +13,12 @@ FROM pls_fy2014_pupld14a
 GROUP BY stabr, stataddr
 ORDER BY stabr ASC, count(*) DESC;
 
+-- alllows us to see if the address has changedin the last year
+
 
 
 -- 8.11 Revisiting sum() to Examine Library Visits 
-
+-- conditional technique to remove the negative values in the survey data
 
  SELECT sum(visits) AS visits_2014
  FROM pls_fy2014_pupld14a
@@ -28,6 +30,7 @@ SELECT sum(visits) AS visits_2009
  WHERE visits >= 0;
 
 
+-- 8.12 limit the analysis to library agencies that exist in both tables
 SELECT 
 	sum(pls14.visits) AS visits_2014,
 	sum(pls09.visits) AS visits_2009
@@ -35,6 +38,7 @@ FROM pls_fy2014_pupld14a pls14 JOIN pls_fy2009_pupld09a pls09
 ON pls14.fscskey = pls09.fscskey
 WHERE pls14.visits >= 0 AND pls09.visits >= 0;
 
+-- including WHERE will prevent the artificial negative values from impacting the sums.
 
 
 -- 8.13 Grouping Visit Sums by State
