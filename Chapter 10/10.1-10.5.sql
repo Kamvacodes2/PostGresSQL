@@ -61,4 +61,20 @@ FROM acs_2011_2015_stats;
 
 
 
+--R-squared value (0.465): Indicates that about 47% of the variation in median household income in a county can be explained by the percentage of people with a bachelor’s degree or higher.
+
+--Remaining 53% of variation: Could be explained by numerous other factors, 
+--which statisticians often test to determine.
+
+--Key points to consider:
+
+--Correlation vs. Causality: Correlation does not prove causality. 
+--It's important to perform significance testing to ensure results are not due to randomness.
+
+--Validity of Regression Analysis: Statisticians apply additional tests 
+--to confirm that variables meet the criteria for a valid regression result, 
+--such as following a bell curve distribution.
+
+
+
 
