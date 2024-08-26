@@ -77,3 +77,6 @@ ORDER BY per_million DESC;
 
 --Simplifying Queries: CTEs can streamline queries with redundant code, 
 --such as using a subquery for median calculation in multiple locations.
+
+
+
