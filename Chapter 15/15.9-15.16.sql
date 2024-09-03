@@ -108,8 +108,7 @@ FROM us_counties_2010
 ORDER BY state_fips, county_fips
 LIMIT 5;
 
--- the trim_county() function evaluated each value in the 
--- geo_name column and removed a space and the word County when present
+
 
 
 
