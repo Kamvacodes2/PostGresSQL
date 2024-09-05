@@ -17,7 +17,7 @@ SELECT * FROM grades;
 -- before id 1 grade = F 
 -- Update a grade
 UPDATE grades
-SET grade = 'C'
+SET grade = 'B'
 WHERE student_id = 1 AND course_id = 1;
 
 SELECT * FROM grades;

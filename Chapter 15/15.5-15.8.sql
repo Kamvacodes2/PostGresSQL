@@ -42,21 +42,21 @@ SELECT * FROM employees;
 
 UPDATE employees_tax_dept
 SET last_name = 'Le Gere'
-WHERE emp_id = 5;
+WHERE emp_id = 9;
 
 SELECT * FROM employees_tax_dept;
 
 -- This will fail because the salary column is not in the view
 UPDATE employees_tax_dept
 SET salary = 100000
-WHERE emp_id = 5;
+WHERE emp_id = 9;
 
 -- ERROR:  column "salary" of relation "employees_tax_dept" does not exist
 
 -- 15-8: Deleting a row via the employees_tax_dept view
 
 DELETE FROM employees_tax_dept
-WHERE emp_id = 5;
+WHERE emp_id = 9;
 
 SELECT * FROM employees_tax_dept;
 
