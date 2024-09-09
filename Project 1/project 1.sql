@@ -1,5 +1,7 @@
 --- CREATE A DEPARTMENT TABLE
 
+SELECT version();
+
 CREATE TABLE department(
 	departmentID bigserial PRIMARY KEY,
 	departmentName varchar(50) NOT NULL
